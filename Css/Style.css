@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* for navigation bar */
+header {
+    display:flex;
+    position:sticky;
+    top:0;
+    justify-content:space-between;
+    align-items:center;
+    font-size: 22px;
+    box-shadow: 0 5px 5px 0px rgba(0,0,0,.2);
+    height:50px;
+    background-color: rgba(20, 21, 23, 70%);
+    transition: 2s ease;
+    z-index: 1;
+} 
+/* for nav bar background color hover effect */
+header:hover{
+    background-color:rgba(20, 21, 23, 100%) ;
+}
+/* end of nav bar background color hover effect */
+
+header nav {
+    display:flex;
+    width:50%;
+    height:100%;
+}
+
+.search_bar{
+    display:flex;
+    height:35px;
+    opacity: 0.75;
+    transition: 1.5s ease;
+}
+/* For search bar opacity hover effect */
+.search_bar:hover{
+    opacity:1;
+}
+/* End of search bar hover effect */
+
+nav a{
+    width:100%;
+    height:100%;
+    text-align: center;
+    text-decoration: none;
+    transition: 0.5s ease;
+    border-radius: 3%;
+}
+
+nav a p{
+    color:rgb(255, 255, 255); 
+    transition:0.5s ease;
+    width:100%;
+    height:100%;
+    padding:12px 0 0 0;
+    transition: 0.5s ease;
+}
+
+nav .cart img{
+    box-sizing: unset;
+    width: 35px;
+    height:22px;
+    padding:12px 0;
+}
+
+.cart{
+    transition: 0.5s ease; 
+    width:60%;
+}
+
+/* For navigation bar text and cart hover effect */
+.cart:hover, nav a:hover {
+    filter:invert();
+    background-color: black;
+}
+/* End of nav bar text and cart hover effect */
+
+.active{
+    border-bottom:4px solid  rgba(247, 249, 237, 0.849);
+    border-radius: 1%;
+    transition:0.5s ease;
+}
+
+.active:hover{
+    border-color:black;
+}
+/*End of navigation bar*/
+
+
+/* footer section */
+footer{
+    background-image: linear-gradient(rgb(43, 45, 71),rgb(14, 18, 54));
+    color: rgb(225, 225, 225);
+}
+footer a{
+    text-decoration: none;
+    color:rgb(232, 232, 232);
+    font-size: 18px;
+}
+
+.footer_main{
+    display:flex;
+    justify-content:space-between;
+    padding: 60px 150px 80px 120px;
+}
+
+footer h1{
+    font-size: 35px;
+    padding-bottom: 5px;
+}
+
+.platforms img{
+    height:40px;
+    width:40px;
+}
+.platforms a{
+    padding-right: 5px;
+}
+/* End of footer section */

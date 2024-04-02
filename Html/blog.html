@@ -1,0 +1,106 @@
+<!doctype html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Blog</title>
+<link rel="stylesheet" href="../Css/Style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+<script src="../Javascript/myscript.js"></script>
+<style>
+    .text{
+        position: absolute;
+        background: rgb(0, 0, 1);
+        background: rgba(0, 0, 0, 0.5);
+        width: 115%;
+        transition:cubic-bezier(1, 0, 0, 1);
+        opacity: 0;
+        color: white;
+        font-size: 25px;
+        padding: 10px;
+        text-align: start;
+    }
+
+    .link:hover .text{
+        opacity: 2;
+    }
+
+    .link{
+        position: relative;
+        top: 50px;
+        left: 30%;
+        width: 100%;
+        position: relative;
+        max-width: 300px;
+        height:550px;
+    }
+</style>
+</head>
+
+<body>
+	<!-- Navigation Bar -->
+    <header>
+        <div>
+            <a href="../Home.html"><img src="../Images/logo.png" alt="logo" height="40px" width="150px" style="padding:0 5px;"></a>
+        </div>
+        <form class="search_bar">   
+            <input type="search" placeholder="Search" size="50" style="border:none;outline:none;padding-left:5px;background-color: #cccdce;">
+            <button type="submit" onclick="search()" style="border:none;width:45px;cursor:pointer;outline:none;background-color: #cccdce;"><img src="../Images/Home/search.png" height="88%" width="35px"></button>
+        </form>
+        <nav>
+                <a href="../Home.html"><p>Home</p></a>
+                <a href="product.html"><p>Products</p></a>
+                <a href="#" class="active"><p>Blog</p></a>
+                <a href="research.html"><p>Research</p></a>
+                <a href="./aboutus.html"><p>About Us</p></a>
+                <a href="#" class="cart" onclick="cart()"><img src="../Images/Home/Nav/shopping-cart.png"></a>
+        </nav>
+    </header>
+    <!-- End of Navigation Bar -->
+    
+		<!--the card to the blog page-->
+	<div class="link">
+		<center>
+			<a href="technology.html">
+				<img src="../Images/Blog.png" width="600px" height="400px">	
+		<div class="text">How technology has affected our daily life and business</div>
+		</a>
+		</center>
+	</div>
+    <!--the end to the blog page-->
+
+
+    <!-- Footer section -->
+    <footer>
+        <div class="footer_main">
+            <div>
+                <img src="../Images/logo.png" width="220px" height="80px"><br>
+                <p style="padding-left: 10px;">The Best Printer Seller in Nepal</p>
+            </div>
+            <div>
+                <h1>About Us</h1>
+                <a href="Contact Us.html">Contact Us</a><br>
+                <a href="aboutus.html">Our team</a><br>
+                <a href="product.html">Products</a><br>
+                <a href="blog.html">Blog</a><br>
+                <a href="research.html">Research</a><br>
+            </div>
+            <div class="platforms">
+                <h1>Platforms</h1>
+                <a href="https://www.instagram.com//" target="_blank"><img src="../Images/Home/Social/instagram.png"></a>
+                <a href="https://www.whatsapp.com//" target="_blank"><img src="../Images/Home/Social/whatsapp.png"></a>
+                <a href="https://www.linkedin.com//" target="_blank"><img src="../Images/Home/Social/linkedin.png"></a> 
+            </div>
+            <div>
+                <h1>Location</h1>
+                <p>Kamalpokhari, Lalitpur</p>
+                <a href="https://maps.app.goo.gl/4aY2fnexwjNbiV9dA" target="_blank" style="text-decoration: none;color:rgba(129, 120, 161, 0.859)">Open in Map&#8599;</a>
+            </div>
+        </div>
+        <div style="padding: 0 0 5px 0;text-align: center;font-size: 15px;">
+            <p>&#169; 2024 Company, Privacy Policy</p>
+        </div>
+    </footer>
+    <!-- Footer Section -->
+
+</body>
+</html>

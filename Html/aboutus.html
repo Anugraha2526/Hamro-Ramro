@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="../Css/Style.css">
+    <script src="../Javascript/myscript.js"></script>
+    <!-- Using internal CSS -->
+    <style>
+        .under{
+            text-decoration: underline;
+            padding-right: 5px;
+        }
+        .content
+        {
+            width: 100%;
+            min-height: 100px;
+        }
+        .content
+        {
+            width: 85;
+            display: grid;
+            margin: 30px auto;
+        }
+        .title
+        {
+            width: 100%;
+            text-align: center;
+            font-size: 25px;
+            color: rgb(0, 0, 0);
+        }
+        .title h1{
+            padding:50px 0;
+            font-size: 80px;
+        }
+        .paragraph{
+            padding: 0 10% 70px 10%;
+            font-size: 25px;
+        }
+        .article{
+            padding: 25px;
+            color:rgb(232,232,232);
+            background-color: rgba(33, 39, 86,70%);
+            box-shadow: rgba(0, 0, 0,0.5) 5px 5px 30px;
+            text-align: justify;
+        }
+        .Team
+        {
+            padding: 30px 0px 80px 0px;
+        }
+        .containerteam img
+        {
+            display: flex;
+            width: 250px; 
+            height: 50vh;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .containerteam{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap:wrap;
+            box-shadow: 2px 2px 30px rgba(0,0,0,.2);
+            padding: 50px 100px 20px 100px;
+
+        }
+        .row{
+            transition: 0.3s ease;
+            width:280px;
+            height:400px;
+        }
+        .title2
+        {
+            width: 100%;
+            font-size: 25px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 25px;
+            color: black;
+            padding: 50px;
+        }
+        /* Hover shadow for profile images. */
+        .profilebox1 img:hover{
+            box-shadow: 2px -1px 20px 5px rgba(13, 24, 123, 0.6);
+        }
+        .profilebox2 img:hover{
+            box-shadow: 2px -1px 20px 5px rgba(95, 70, 39,0.6);
+        }
+        .profilebox3 img:hover{
+            box-shadow: 2px -1px 20px 5px rgba(3, 56, 8, 0.6);
+        }
+        .profilebox4 img:hover{
+            box-shadow: 2px -1px 20px 5px rgba(78, 41, 119, 0.6);
+        } 
+        /* End of hover shadow. */
+        .contact{
+            font-size: 60px;
+            margin:0 0 50px 39%;
+            padding:20px;
+            border:none;
+            box-shadow: 2px -1px 15px 1px rgba(0, 0, 0, 0.5);
+            cursor:pointer;
+            background-color: #1c347d;
+            color:rgb(232, 232, 232);
+        }
+    </style>
+</head>
+<!-- Using inline CSS -->
+<body style="background-color: rgb(232,232,232)";> 
+    <!-- Using <div> tag for dividing the webpage into various parts -->
+    <div class = "container" style="background-image: url(../Images/About\ us/print\ cover.jpg);">
+        <!-- Navigation Bar -->
+        <header>
+            <div>
+                <a href="../Home.html"><img src="../Images/logo.png" alt="logo" height="40px" width="150px" style="padding:0 5px;"></a>
+            </div>
+            <form class="search_bar">   
+                <input type="search" placeholder="Search" size="50" style="border:none;outline:none;padding-left:5px;background-color: #cccdce;">
+                <button type="submit" onclick="search()" style="border:none;width:45px;cursor:pointer;outline:none;background-color: #cccdce;"><img src="../Images/Home/search.png" height="88%" width="35px"></button>
+            </form>
+            <nav>
+                    <a href="../Home.html"><p>Home</p></a>
+                    <a href="./product.html"><p>Products</p></a>
+                    <a href="./blog.html"><p>Blog</p></a>
+                    <a href="research.html"><p>Research</p></a>
+                    <a href="#" class="active"><p>About Us</p></a>
+                    <a href="#" class="cart" onclick="cart()"><img src="../Images/Home/Nav/shopping-cart.png"></a>
+            </nav>
+        </header>
+        <!-- End of Navigation Bar -->
+        <div class = "title">
+            <h1>ABOUT US</h1>
+        </div>
+        <div class = "paragraph">
+            <div class = "article">
+                <!-- Using <p> tag for writing paragraph. -->
+                <p>
+                    Welcome to Hamro Ramro. Founded by a team of experts who are willing to provide you 
+                    a good expeirence on choosing and buying a printer. Our aim is to create an innovative and user friendly environment
+                    that provides values to the visitors. We thrive in providing the best quality and 
+                    customer satisfaction. We are constantly learning and updating our skills to ensure that we provide
+                    the best possible experience for our customers.We know the struggle of trying to find a perfect printer for your specific requirement.
+                    With the help of our team you won't have a problem in that. 
+
+                </p>
+                <!-- End of <p> tag. -->
+            </div>
+        </div>
+    </div>
+
+<!-- Creating a different section for Portofolio. -->
+    <!-- Start of section class Team -->
+    <section class = "Team">
+        <div class = "title2">
+            <h1>MEET OUR TEAM</h1>
+        </div>
+        <div class = "containerteam" style="text-align: center;">
+                <div class = "profilebox1">
+                    <!-- Using anchor tag for linking the about us page to CV page -->
+                    <!-- Using <img src> for inserting image in the webpage. -->
+                    <a href="./Portfolio/Anugraha.html" target="_blank"><img src = "../Images/About us/anugraha.jpg"></a>
+                    <h2> Anugraha Maharjan </h2>
+                    <h3>Senior-Developer</h3>
+                </div>
+                <div class ="profilebox2">
+                    <a href="./Portfolio/Anil.html" target="_blank"><img src = "../Images/About us/Anil.png"></a>
+                    <h2> Anil Malla</h2>
+                    <h3>Ethical Hacker</h3>
+                </div>
+                <div class ="profilebox3">
+                    <a href="./Portfolio/Nischal.html" target="_blank"><img src ="../Images/About us/nischal.jpg"></a>
+                    <h2> Nischal </h2>
+                    <h3>Developer</h3>
+                </div>
+                <div class ="profilebox4">
+                    <a href="./Portfolio/Asbin.html" target="_blank"><img src = "../Images/About us/asbin.jpg"></a>
+                    <h2> Asbin Dahal </h2>
+                    <h3>Researcher</h3>
+                </div>
+       </div>
+       <!-- Start of section class Team -->
+    </section>
+<!-- End of portofolio section. -->
+
+<!-- Creating a button for redirecting the webpage to Contact Us page. -->
+    <div>
+        <a href="Contact Us.html"><input type="button" value="Contact US" class="contact"></a>
+    </div>
+
+    <!-- Footer section -->
+    <footer>
+        <div class="footer_main">
+            <div>
+                <img src="../Images/logo.png" width="220px" height="80px"><br>
+                <p style="padding-left: 10px;">The Best Printer Seller in Nepal</p>
+            </div>
+            <div>
+                <h1>About Us</h1>
+                <a href="Contact Us.html">Contact Us</a><br>
+                <a href="aboutus.html">Our team</a><br>
+                <a href="product.html">Products</a><br>
+                <a href="blog.html">Blog</a><br>
+                <a href="research.html">Research</a><br>
+            </div>
+            <div class="platforms">
+                <h1>Platforms</h1>
+                <a href="https://www.instagram.com//" target="_blank"><img src="../Images/Home/Social/instagram.png"></a>
+                <a href="https://www.whatsapp.com//" target="_blank"><img src="../Images/Home/Social/whatsapp.png"></a>
+                <a href="https://www.linkedin.com//" target="_blank"><img src="../Images/Home/Social/linkedin.png"></a> 
+            </div>
+            <div>
+                <h1>Location</h1>
+                <p>Kamalpokhari, Lalitpur</p>
+                <a href="https://maps.app.goo.gl/4aY2fnexwjNbiV9dA" target="_blank" style="text-decoration: none;color:rgba(129, 120, 161, 0.859)">Open in Map&#8599;</a>
+            </div>
+        </div>
+        <div style="padding: 0 0 5px 0;text-align: center;font-size: 15px;">
+            <p>&#169; 2024 Company, Privacy Policy</p>
+        </div>
+    </footer>
+    <!-- Footer Section -->
+    
+</body>
+</html>

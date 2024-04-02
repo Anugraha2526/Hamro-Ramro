@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Hamro-Ramro team">
+    <meta name="keyword" content="ecommerce, printers, hamro ramro, islington">
+    <meta name="descirption" content="ecommerce website for printers">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="./Css/Style.css">
+    <script src="./Javascript/myscript.js"></script>
+    <style>
+        html{
+            scroll-behavior: smooth;                        /* For page to scroll for hyperlink */ 
+        }
+        
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;                        
+        }
+
+        a{
+            text-decoration: none;                          /* to disable underline for all anchor tags */ 
+        }
+
+
+        /* Hero section */
+        .Main_area{
+            background-image: linear-gradient(rgba(0,0,0,0.25),rgba(0,0,0,0.25)), url("./Images/Home/Cover/1.jpg");
+            height: 750px;
+            width:100%;
+            background-size: cover;
+        }
+        .Main_text{
+            font-size: 90px;
+            margin:225px 0 0 50px;
+            color: rgba(247, 249, 237, 0.849);
+        }
+        .Main_lists ul{
+            display:flex;
+            justify-content: space-between;
+            width:400px;
+            margin:15px 0 15px 70px;
+            font-size: 20px;
+        }
+        .Main_lists ul li {
+            color: rgba(247, 249, 237, 0.849);
+            padding: 0 40px 0 0;
+        }
+        .Main_shop, .banner_shop{
+            padding:25px 160px;
+        }
+        .Main_shop a, .banner_shop a{
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            font-size: 30px;
+            border:1px solid rgb(255, 255, 255);
+            border-radius: 5px;
+            padding: 15px 30px;
+            transition: 0.5s ease;
+            background-color: rgba(255, 255, 255, 0);
+        }
+        .Main_shop a:hover{
+            background-color:rgb(35, 60, 60);
+        }
+        /* end of hero section */
+
+
+        /* Featured items section */
+        .featured_items{
+            font-size: 50px;
+        }
+        .view_all { 
+            border: 2px solid black;
+            height:100%;
+            text-decoration: none;
+            color:black;
+            font-size: 20px;
+            font-weight:bold;
+            padding:15px;
+        }
+        .featured_heading{
+            display:flex; 
+            justify-content: space-between; 
+            padding:0 60px;
+            height:60px;
+        }
+        .featured_box{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap:wrap;
+            margin: 20px 50px;
+        }
+        .container_1{
+            transition: 0.3s ease;
+            background-color: rgb(225, 225, 225);
+            width:280px;
+            height:420px;
+        }
+        .container_1:hover{
+            box-shadow: 5px 5px 30px rgba(0, 0, 0,0.5);
+        }
+        .container_image{
+            background-color: rgb(220, 220, 220);
+            padding:0 5%;
+            height:300px;
+        }
+        .container_1 .container_image img{
+            width:250px;
+            height:300px;
+        }
+        .container_1 h1{
+            font-size: 25px;
+            padding-left:10px;
+            color:rgb(45, 121, 83);
+        }
+        .container_1 h2{
+            padding: 10px 0 0 10px;
+            font-size: 20px;
+            color:black;
+        }
+        .container_1 p{
+            padding-left:10px;
+            font-size:17px;
+            color:black;
+        }
+        .container_1 span{
+            text-decoration:line-through;
+            padding-right:10px;
+            color:rgb(107, 107, 107);
+        }
+        /* End of featured items section */
+
+        
+        /* Discount ad section */
+        .banner{
+            padding:40px 0;
+        }
+        .banner_bg{
+            background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("./Images/Home/Banner.jpg");
+            height:400px;
+        }
+        .banner_text{ 
+            padding:120px 0;
+            text-align: center;
+            position: relative;
+            color: aliceblue;
+        }
+        .banner_text_1{ 
+            font-size: 25px;
+        }
+        .banner_text_2{
+            font-size: 50px;
+        }
+        .banner_shop a{
+            background-color: rgb(48, 48, 48);
+        }
+        .banner a:hover{
+            background-color:rgb(69, 69, 69);
+        }
+        /* End of discount banner */
+
+
+        /* Advantages section */
+        .advantages{
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .advantages h2{
+            font-family:Arial, Helvetica, sans-serif ;
+            padding: 10px 0 0 0; 
+        }
+        .advantages p{
+            font-family:Arial, Helvetica, sans-serif ;
+            padding: 5px 0 0 0; 
+        }
+        .adv_container{
+            height:150px;
+            width:250px;
+        }
+        .adv_container img{
+            margin-left: 12px;
+            height: 80px;
+            width:100px;
+        }
+        /* End of Advantages section */
+
+
+        /* Blogs section */
+        .container_2{
+            transition: 0.3s ease;
+            background-color: rgb(225, 225, 225);
+            width:450px;
+            height:500px;
+        }
+        .container_2:hover{
+            box-shadow: 5px 5px 30px rgba(0, 0, 0,0.5);
+        }
+        .container_2 .container_image{
+            height:400px;
+        }
+        .container_2 h2{
+            padding: 10px 10px;
+            color:black;
+        }
+        /* End of Blogs section */
+    </style>
+</head>
+<body style="background-color: rgb(232, 232, 232)";>
+
+
+    <!-- Hero section -->
+    <section class="Main_area" id="area">
+
+        <!-- Navigation Bar -->
+        <header>
+            <div>
+                <a href="#"><img src="./Images/logo.png" alt="logo" height="40px" width="150px" style="padding-left:5px;"></a>
+            </div>
+            <form class="search_bar">   
+                <input type="search" placeholder="Search" size="50" style="border:none;outline:none;padding-left:5px;background-color: #cccdce;">
+                <button type="submit" onclick="search()" style="border:none;width:45px;cursor:pointer;outline:none;background-color: #cccdce;"><img src="./Images/Home/search.png" height="88%" width="35px"></button>
+            </form>
+            <nav>
+                    <a href="#" class="active"><p>Home</p></a>
+                    <a href="./Html/product.html"><p>Products</p></a>
+                    <a href="./Html/blog.html"><p>Blog</p></a>
+                    <a href="./HTML/research.html"><p>Research</p></a>
+                    <a href="./Html/aboutus.html"><p>About Us</p></a>
+                    <a href="#" class="cart" onclick="cart()"><img src="./Images/Home/Nav/shopping-cart.png"></a>
+            </nav>
+        </header>
+        <!-- End of Navigation Bar -->
+
+        <!-- Text in hero section -->
+        <section>
+            <div class="Main_text" >
+                <p><b>One for All</b></p>
+            </div>
+            <div class="Main_lists">
+                <ul>
+                    <li>Printing</li>
+                    <li>Copying</li>
+                    <li>Scanning</li>
+                    <li>Faxing</li>
+                </ul>
+            <div class="Main_shop">
+                <a href="#featured">Shop Now</a>
+            </div>
+        </section>
+        <!-- End of text in hero section -->
+
+    </section>
+    <!-- End of Hero section -->
+    
+
+
+    <!-- Festured Items section -->
+    <section style="padding:65px 0 30px 0;" id="featured">    
+        <div class="featured_heading">
+            <div class="featured_items">
+            <p>Featured Items</p>
+            </div>
+            <a href="./Html/product.html" class="view_all">View all</a>
+        </div>
+
+        <!-- Items in featured section -->
+        <section  class="featured_box">
+            <a href="./Html/product.html">
+                <div class="container_1">
+                    <div class="container_image">
+                        <img src="./Images/Home/Featured/printer1.png">
+                    </div>
+                    <h2>HP Color LaserJet Pro<br>MFP M283fdw</h2>
+                    <h1>Rs 40,600</h1>
+                    <p><span>Rs 58,000</span>-30%</p>
+                </div>
+            </a>
+            <a href="./Html/product.html">
+                <div class="container_1">
+                    <div class="container_image"> 
+                        <img src="./Images/Home/Featured/printer3.png">
+                    </div>
+                    <h2>Brother Laser Printer<br>MFCL2750DW</h2>
+                    <h1>Rs 38,150</h1>
+                    <p><span>Rs 54,500</span>-30%</p>
+                </div>
+            </a>
+            <a href="./Html/product.html">
+                <div class="container_1">
+                    <div class="container_image">
+                        <img src="./Images/Home/Featured/printer2.png">
+                    </div>
+                    <h2>Brother Laser Printer<br>HL-L2350DW</h2>
+                    <h1>Rs 24,220</h1>
+                    <p><span>Rs 28,500</span>-15%</p>
+                </div>
+            </a>
+            <a href="./Html/product.html">
+                <div class="container_1">
+                    <div class="container_image">
+                        <img src="./Images/Home/Featured/printer4.png">
+                    </div>
+                    <h2>HP OfficeJet Pro<br>9015e</h2>
+                    <h1>Rs 20,000</h1>
+                    <p><span>Rs 24,999</span>-20%</p>
+                </div> 
+            </a> 
+        </section>
+        <!-- End of items in featured section -->
+
+    </section>
+    <!-- Featured Items section -->
+
+
+
+    <!-- Banner for discount -->
+    <section class="banner">
+        <div class="banner_bg">
+            <div class="banner_text">
+            <p class="banner_text_1">This Season</p>
+            <p class="banner_text_2">Up to 30% Off</p>
+            <div class="banner_shop">
+                <a href="./Html/product.html">Buy Now</a></div>
+            </div>
+        </div>
+    </section>
+    <!-- Banner for discount -->
+
+
+
+    <!-- Section for advantages -->
+    <section class="advantages">
+        <div class="adv_container">
+            <img src="./Images/Home/Advantages/truck.png">
+            <h2>Fast Shipping</h2>
+            <p>48 hours delivery</p>
+        </div>
+        <div class="adv_container">
+            <img src="./Images/Home/Advantages/warrenty.png">  
+            <h2>1-Year Warrenty</h2>
+            <p>Free Replacement for manufacture defect</p>
+        </div>
+        <div class="adv_container">
+            <img src="./Images/Home/Advantages/return.png">
+            <h2>Free 7-Day Return</h2>
+            <p>Change of mind is applicable</p>
+        </div>
+    </section> 
+    <!-- Section for advantages -->
+
+
+
+    <!-- Section for Blogs -->
+    <section style="margin:60px 100px">                                                                       
+        <div class="featured_heading">
+            <div class="featured_items">
+                <p>Latest Blogs</p>
+            </div>
+            <a href="./Html/blog.html" class="view_all">View all</a>
+        </div>
+        <a href="./Html/technology.html">
+            <div class="featured_box" >
+                <div class="container_2">
+                    <div class="container_image" style="padding:10px 10px;">
+                        <img src="./Images/Blog.png"  width=100% height=100%>
+                    </div>
+                    <h2>How technology has affected our daily life and business</h2>
+                </div>  
+            </div>
+        </a>
+    </section>
+    <!-- Section for Blogs -->
+
+
+    
+    <!-- Footer section -->
+    <footer>
+        <div class="footer_main">
+            <div>
+                <img src="./Images/logo.png" width="220px" height="80px"><br>
+                <p style="padding-left: 10px;">The Best Printer Seller in Nepal</p>
+            </div>
+            <div>
+                <h1>About Us</h1>
+                <a href="./HTML/Contact Us.html">Contact Us</a><br>
+                <a href="./Html/aboutus.html">Our team</a><br>
+                <a href="./Html/product.html">Products</a><br>
+                <a href="./Html/blog.html">Blog</a><br>
+                <a href="./Html/research.html">Research</a><br>
+            </div>
+            <div class="platforms">
+                <h1>Platforms</h1>
+                <a href="https://www.instagram.com//" target="_blank"><img src="./Images/Home/Social/instagram.png"></a>
+                <a href="https://www.whatsapp.com//" target="_blank"><img src="./Images/Home/Social/whatsapp.png"></a>
+                <a href="https://www.linkedin.com//" target="_blank"><img src="./Images/Home/Social/linkedin.png"></a> 
+            </div>
+            <div>
+                <h1>Location</h1>
+                <p>Kamalpokhari, Lalitpur</p>
+                <a href="https://maps.app.goo.gl/4aY2fnexwjNbiV9dA" target="_blank" style="text-decoration: none;color:rgba(129, 120, 161, 0.859)">Open in Map&#8599;</a>
+            </div>
+        </div>
+        <div style="padding: 0 0 5px 0;text-align: center;font-size: 15px;">
+            <p>&#169; 2024 Company, Privacy Policy</p>
+        </div>
+    </footer>
+    <!-- Footer Section -->
+
+
+    <!--For Image slider-->
+    <div id="img">
+    </div>
+    <script>
+        var images=["Images/Home/Cover/2.jpg","Images/Home/Cover/1.jpg"];
+        var x=0;
+        var imgs=document.getElementById("img");
+        setInterval(slider,5000);
+        function slider()
+        {
+            if (x<images.length)
+            {
+                x=x+1;
+            }
+            else{
+                x=1;
+            }  
+        imgs.innerHTML="<style>.Main_area{background-image: linear-gradient(rgba(0,0,0,0.25),rgba(0,0,0,0.25)), url("+ images[x-1] +");height:750px;width:100%;"+
+            "background-size: cover;</style>";
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="../CSS/Style.css">
+    <!-- Inserting Javascipt -->
+    <script src="../Javascript/myscript.js"></script>
+<!-- Using internal CSS -->
+<style>
+    .contactcontainer {
+        width: 100%;
+        height: 750px;
+        background: rgb(12, 5, 53);
+    }
+
+    .container  {
+        width: 90%;
+        max-width: 500px;
+        padding: 50px 30px 20px;
+        border-radius: 4px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+    }
+    form .button {
+        background: #141a34;
+        color: #fff;
+        border-radius: 4px;
+        border: 1px solid rgba(255, 255, 255, 0.7);
+        padding: 10px 40px;
+        outline: 0;
+        cursor: pointer;
+        margin: 30px auto 10px;
+    }
+    table td {
+        padding-bottom: 5px;
+    }
+</style>
+<!-- End of Internal CSS -->
+</head>
+<body>
+<!-- Using <div> tag to divide the webpage. -->
+    <div class = "contactcontainer">
+        <!-- Navigation Bar -->
+        <header>
+            <div>
+                <a href="../Home.html"><img src="../Images/logo.png" alt="logo" height="40px" width="150px" style="padding:0 5px;"></a>
+            </div>
+            <form class="search_bar">   
+                <input type="search" placeholder="Search" size="50" style="border:none;outline:none;padding-left:5px;background-color: #cccdce;">
+                <button type="submit" onclick="search()" style="border:none;width:45px;cursor:pointer;outline:none;background-color: #cccdce;"><img src="../Images/Home/search.png" height="88%" width="35px"></button>
+            </form>
+            <nav>
+                    <a href="../Home.html"><p>Home</p></a>
+                    <a href="product.html"><p>Products</p></a>
+                    <a href="./blog.html"><p>Blog</p></a>
+                    <a href="research.html"><p>Research</p></a>
+                    <a href="./aboutus.html"><p>About Us</p></a>
+                    <a href="#" class="cart" onclick="cart()"><img src="../Images/Home/Nav/shopping-cart.png"></a>
+            </nav>
+        </header>
+        <!-- End of Navigation Bar -->
+<!-- <form> tag is used for the creating of Form -->
+        <form name = "contactform" onsubmit = "validateform()" style="background-color: white; margin:100px 500px;padding:20px 0 0 20px;box-shadow: 5px 5px 30px black; border-radius: 1%;"  >
+            <!-- Using table tag. -->
+            <h1>Contact Us</h1>
+            <br>
+            <table width="100%">
+                <!-- <td> is used for putting table data. -->
+                <!-- <tr> is used for table rows. -->
+            <tr>
+                <td><label>Full Name:</label></td>
+                <td><input type = "text" placeholder = "Enter your First Name" name = "fname" ></td>
+            </tr>
+            <tr>
+                <td><label>Email:</label></td>
+                <td><input type = "email" placeholder = "Enter your email address" name = "email" ></td>
+            </tr>
+            <tr>
+                <td><label>Address:</label></td>
+                <td><input type = "text" placeholder = "Enter your address" name = "address"></td>
+            </tr>
+            <tr>
+                <td><label>Message:</label></td>
+                <td><textarea rows="15" cols="40" placeholder="Enter your message" name="message"></textarea></td>
+            </tr>
+            <tr>
+                <td><input type ="submit" name = "Submit" class = "button"></td>
+            </tr>
+            </table>
+        </form>
+<!-- End of Form tag. -->
+    </div>
+
+    <!-- Footer section -->
+    <footer>
+        <div class="footer_main">
+            <div>
+                <img src="../Images/logo.png" width="220px" height="80px"><br>
+                <p style="padding-left: 10px;">The Best Printer Seller in Nepal</p>
+            </div>
+            <div>
+                <h1>About Us</h1>
+                <a href="Contact Us.html">Contact Us</a><br>
+                <a href="aboutus.html">Our team</a><br>
+                <a href="product.html">Products</a><br>
+                <a href="blog.html">Blog</a><br>
+                <a href="research.html">Research</a><br>
+            </div>
+            <div class="platforms">
+                <h1>Platforms</h1>
+                <a href="https://www.instagram.com//" target="_blank"><img src="../Images/Home/Social/instagram.png"></a>
+                <a href="https://www.whatsapp.com//" target="_blank"><img src="../Images/Home/Social/whatsapp.png"></a>
+                <a href="https://www.linkedin.com//" target="_blank"><img src="../Images/Home/Social/linkedin.png"></a> 
+            </div>
+            <div>
+                <h1>Location</h1>
+                <p>Kamalpokhari, Lalitpur</p>
+                <a href="https://maps.app.goo.gl/4aY2fnexwjNbiV9dA" target="_blank" style="text-decoration: none;color:rgba(129, 120, 161, 0.859)">Open in Map&#8599;</a>
+            </div>
+        </div>
+        <div style="padding: 0 0 5px 0;text-align: center;font-size: 15px;">
+            <p>&#169; 2024 Company, Privacy Policy</p>
+        </div>
+    </footer>
+    <!-- End of Footer Section -->
+
+    <!-- Creating a JavaScript -->
+    <script>
+        function validateform()
+        {
+            var fname = document.forms["contactform"]["fname"].value;
+            var email = document.forms["contactform"]["email"].value;
+            var address = document.forms["contactform"]["address"].value;
+            var message = document.forms["contactform"]["message"].value;
+            if (fname == "" || email == "" || address == "" || message == "")
+            {
+                alert("Please fill out all the information." );
+            }
+            else
+            {
+                alert("We have received your message and we will get back to you as soon as possible.");
+            }
+        }
+    </script>
+    <!-- End of JavaScript. -->
+</body>
+
+</html>
